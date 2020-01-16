@@ -13,6 +13,7 @@ namespace LuckySpin.Controllers
             int a = random.Next(1, 10);
             int b = random.Next(1, 10);
             int c = random.Next(1, 10);
+            
 
             // Load up the ViewBag for use by the Spinner View "Index.cshtml"
             ViewBag.ImgDisplay = (a == luck || b == luck || c == luck)?"block":"none";
