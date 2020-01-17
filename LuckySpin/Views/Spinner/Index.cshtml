@@ -1,14 +1,23 @@
-﻿<!DOCTYPE html>
+﻿
+@model LuckySpin.Model.spinController
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
+  
+
+
+
+
     <title>Lucky Spin</title>
     <link rel="stylesheet" href="/luckyStyles.css">
 </head>
 <body>
     <button onclick='history.go(0)'>Spin</button>
-    <div>@ViewBag.A</div><div>@ViewBag.B</div><div>@ViewBag.C</div>
-    <h1> Lucky @ViewBag.luck </h1>
-    <img src="/Images/LuckySpinCoins.jpg" alt="Coins" style="display:@ViewBag.ImgDisplay" />
+    
+    <div>@Model.ValA</div><div>@Model.ValB</div><div>@Model.ValC</div>
+    <h1> Lucky @Model.Luck </h1>
+    <img src="/Images/LuckySpinCoins.jpg" alt="Coins" style="display:@Model.ImgDisplay" />
 </body>
 </html>

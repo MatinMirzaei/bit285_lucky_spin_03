@@ -7,10 +7,16 @@ namespace LuckySpin.Model
 {
     public class spinController
     {
-        public int A;
-        public int B;
-        public int C;
+
+        // data holder. 
+        
+
+       
+
+        public int ValA;
+        public int ValB;
+        public int ValC;
         public string ImgDisplay;
-        public int luck;
+        public int Luck;
     }
 }
